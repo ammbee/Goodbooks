@@ -1,0 +1,60 @@
+/* =============
+    Gallery
+============= */
+
+#gallery {
+  ul {
+    display: grid;
+    grid-gap: none;
+    grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4" "gallery-5";
+    grid-template-rows: repeat(4, 350px);
+    @include sm {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3" "gallery-4 gallery-4";
+      grid-template-rows: repeat(3, 400px);
+    }
+    @include md {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3" "gallery-5 gallery-5" "gallery-4 gallery-4";
+      grid-template-rows: repeat(4, 500px);
+    }
+    @include lg {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3" "gallery-5 gallery-4";
+      grid-template-rows: repeat(3, 600px);
+    }
+
+    li {
+      background-size: cover;
+    }
+
+    li:nth-child(1) {
+      background-image: url("../img/gallery/book-pile.jpg");
+      grid-area: gallery-1;
+      background-position: center;
+    }
+
+    li:nth-child(2) {
+      background-image: url("../img/gallery/tablet.jpg");
+      grid-area: gallery-2;
+    }
+
+    li:nth-child(3) {
+      background-image: url("../img/gallery/head.jpeg");
+      background-position: center;
+      grid-area: gallery-3;
+    }
+
+    li:nth-child(4) {
+      background-image: url("../img/gallery/books.jpg");
+      background-position: center;
+      grid-area: gallery-4;
+    }
+
+    li:nth-child(5) {
+      background-image: url("../img/gallery/book-wall.jpg");
+      background-position: center;
+      grid-area: gallery-5;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* =============
+    Footer
+============= */
+footer {
+  font-weight: 700;
+  padding: 37px 0;
+  text-align: center;
+
+  h1 {
+    font-size: rem-calc(20);
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 10px;
+
+      a:link,
+      a:visited {
+        color: $black;
+        font-size: rem-calc(20);
+      }
+
+      a:active,
+      a:hover {
+        color: $accent;
+      }
+    }
+  }
+}
