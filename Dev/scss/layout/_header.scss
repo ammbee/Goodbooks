@@ -1,0 +1,21 @@
+/* =============
+    Header
+============= */
+header {
+  div {
+    align-items: baseline;
+    display: flex;
+    font-size: rem-calc(22);
+    justify-content: space-between;
+    padding: 10px 0;
+
+    h1 {
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: rem-calc(22);
+
+      span {
+        color: $accent;
+      }
+    }
+  }
+}

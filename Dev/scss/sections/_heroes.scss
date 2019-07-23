@@ -1,0 +1,71 @@
+/* =============
+    Heroes
+============= */
+
+#hero-1 {
+  background-image: url("../img/hero/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 280px;
+  position: relative;
+
+  .hero-text {
+    color: white;
+    font-family: 'Patrick Hand SC', cursive;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 57%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: rem-calc(28);
+      white-space: nowrap;
+    }
+  }
+  @include sm{
+    height: 380px;
+  }
+
+  @include md{
+    height: 480px;
+  }
+
+  @include lg{
+    height: 580px;
+  }
+}
+
+#hero-2 {
+  background-image: url("../img/hero/hero-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+
+  .hero-text {
+    color: white;
+    font-family: 'Patrick Hand SC', cursive;
+    left: 32%;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: rem-calc(35);
+      white-space: nowrap;
+    }
+  }
+  @include sm{
+    height: 400px;
+  }
+
+  @include md{
+    height: 500px;
+  }
+
+  @include lg{
+    height: 600px;
+  }
+}
